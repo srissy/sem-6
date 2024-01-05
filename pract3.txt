@@ -1,0 +1,119 @@
+SWITCH IP ADDRESS daalna kaisa hai:--> for all switches
+config t
+interface VLAN 1
+ip address (ip address)____ (SUBNET)___
+no shutdown
+
+-------------------------------------------------
+PC1
+
+Packet Tracer PC Command Line 1.0
+C:\>ping 172.22.34.98
+
+Pinging 172.22.34.98 with 32 bytes of data:
+
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+
+Ping statistics for 172.22.34.98:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>ping 172.22.34.62
+
+Pinging 172.22.34.62 with 32 bytes of data:
+
+Reply from 172.22.34.62: bytes=32 time=1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time=1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time<1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time<1ms TTL=127
+
+Ping statistics for 172.22.34.62:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+C:\>ftp 172.22.34.62
+Trying to connect...172.22.34.62
+Connected to 172.22.34.62
+220- Welcome to PT Ftp server
+Username:cisco
+331- Username ok, need password
+Password:
+230- Logged in
+(passive mode On)
+ftp>quit
+
+221- Service closing control connection.
+C:\>ping 172.22.34.98
+
+Pinging 172.22.34.98 with 32 bytes of data:
+
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+
+Ping statistics for 172.22.34.98:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>ping 172.22.34.62
+
+Pinging 172.22.34.62 with 32 bytes of data:
+
+Reply from 172.22.34.62: bytes=32 time<1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time<1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time=1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time<1ms TTL=127
+
+Ping statistics for 172.22.34.62:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+C:\>
+
+
+-----------------------------------------------------
+PC2
+Packet Tracer PC Command Line 1.0
+C:\>ping 172.22.34.66
+
+Pinging 172.22.34.66 with 32 bytes of data:
+
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 172.22.34.66:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>ping 172.22.34.66
+
+Pinging 172.22.34.66 with 32 bytes of data:
+
+Reply from 172.22.34.97: Destination host unreachable.
+Reply from 172.22.34.97: Destination host unreachable.
+Reply from 172.22.34.97: Destination host unreachable.
+Reply from 172.22.34.97: Destination host unreachable.
+
+Ping statistics for 172.22.34.66:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>ping 172.22.34.62
+
+Pinging 172.22.34.62 with 32 bytes of data:
+
+Reply from 172.22.34.62: bytes=32 time=1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time=1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time<1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time<1ms TTL=127
+
+Ping statistics for 172.22.34.62:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+C:\>
